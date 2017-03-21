@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>FreeFit健身找場地</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<script src="https://use.fontawesome.com/b462010ced.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css">
+	<style type="text/css">
+		#header{
+			width: 94%;
+			height: 80px;
+			background-color: #2ab1ef;
+			padding: 0px 3%;
+			color: white;
+		}
+		.headerIcon{
+			float: left;
+			height: 80px;
+			line-height: 80px;
+		}
+		.headerTitle{
+			float: left;
+			height: 80px;
+			line-height: 80px;
+			font-size: 2rem;
+			margin-left: 2%;
+		}
+		.headerNav{
+			float: right;
+			height: 80px
+		}
+		.headerNav ul{
+			margin: 0px;
+			float: left;
+		}
+		.headerNav ul li{
+			display: inline-block;
+			font-size: 1.2rem;
+			line-height: 80px;
+			margin-left: 1rem;
+		}
+		.headerLogin{
+			display: inline-block;
+			float: right;
+			font-size: 1.2rem;
+			padding: .4rem .8rem;
+			color: #2ab1ef;
+			background-color: white;
+			border-radius: 1rem;
+			margin-left: 1rem;
+			margin-top: 1.3rem;
+		}
+		#banner{
+			color: white;
+			text-align: center;
+			background-image: url(images/banner1.jpg);
+			background-size: 100% auto;
+			background-position: center;
+			padding: 8rem 0px 1rem 0px;
+		}
+		.bannerTitle, .bannerSubtitle{
+			margin: 0px;
+			font-size: 2rem;
+		}
+		.bannerContent{
+			margin: 0px;
+			font-size: 1.3rem;
+		}
+		.bannerMenu{
+			margin-top: 4rem;
+		}
+		.bannerSelect{
+			display: inline-block;
+			color: #2ab1ef;
+			background-color: rgb(248, 248, 248);
+			border: 1px solid rgb(166, 166, 166);
+			border-radius: .3rem;
+			padding: 0px .5rem;
+			margin-right: .5rem;
+		}
+		.bannerSelect select{
+			appearance: none;
+			-webkit-appearance: none;
+			font-size: 1.4rem;
+			padding: .7rem .8rem;
+			border: none;
+		}
+		.bannerSelect select:focus{
+			outline: none;
+		}
+		.bannerSelect .fa-angle-down{
+			position: relative;
+			top: .3rem;
+		}
+		.bannerMenuButton{
+			font-size: 1.4rem;
+			background-color: #2ab1ef;
+			padding: .7rem 1.3rem;
+			border-radius: .2rem;
+			border: 1px solid #2ab1ef;
+			color: white;
+		}
+		.bannerMenuSearch{
+			margin-top: 1rem;
+			margin-bottom: 2rem;
+			width: 20rem;
+			height: 2rem;
+			padding: .2rem 1rem;
+			border-radius: .3rem;
+			border: 1px solid white;
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<div class="headerIcon">
+			<i class="fa fa-search fa-2x"></i>
+		</div>
+		<div class="headerTitle">
+			FreeFit
+		</div>
+		<nav class="headerNav">
+			<ul>
+				<li>成為場地主</li>
+				<li>預約查詢</li>
+			</ul>
+			<div class="headerLogin">登入/註冊</div>
+		</nav>
+	</header>
+	<section id="banner">
+		<h1 class="bannerTitle">FreeFit 選場地</h1>
+		<h1 class="bannerSubtitle">自由自在 不受拘束</h1>
+		<h2 class="bannerContent">整個城市都是我的個人健身房</h2>
+		<div class="bannerMenu">
+			<div class="bannerSelect">
+				<i class="fa fa-list-alt"></i>
+				<select>
+					<option disabled="disabled" selected>訓練項目</option>
+					<option>--</option>
+					<option>重量訓練</option>
+					<option>TRX</option>
+					<option>瑜珈</option>
+					<option>有氧運動</option>
+				</select>
+				<i class="fa fa-angle-down fa-2x"></i>
+			</div>
+			<div class="bannerSelect">
+				<i class="fa fa-tag"></i>
+				<select>
+					<option disabled="disabled" selected>地點</option>
+					<option>--</option>
+					<option>台北市</option>
+					<option>新北市</option>
+					<option>台中市</option>
+					<option>台南市</option>
+					<option>高雄市</option>
+				</select>
+				<i class="fa fa-angle-down fa-2x"></i>
+			</div>
+			<div class="bannerSelect">
+				<i class="fa fa-user"></i>
+				<select>
+					<option disabled="disabled" selected>訓練人數</option>
+					<option>--</option>
+					<option>1-10</option>
+					<option>11-20</option>
+					<option>21-40</option>
+					<option>41-60</option>
+					<option>61-80</option>
+					<option>81-100</option>
+					<option>101-200</option>
+					<option>201-300</option>
+					<option>301-400</option>
+					<option>401-500</option>
+					<option>500+</option>
+				</select>
+				<i class="fa fa-angle-down fa-2x"></i>
+			</div>
+			<button class="bannerMenuButton">找場地</button>
+		</div>
+		<input class="bannerMenuSearch" type="text" placeholder="尋找合適的健身場地">
+	</section>
+	<div class="multiple-items">
+		<div><h1>1</h1></div>
+		<div><h2>2</h2></div>
+		<div><h3>3</h3></div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+	<script type="text/javascript">
+		$('.multiple-items').slick();
+	</script>
+</body>
+</html>
